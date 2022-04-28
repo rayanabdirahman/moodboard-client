@@ -2,6 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 import Input from "../../../components/Input";
 import Button from "../../../components/Button";
+import { SignUpValidationSchema } from "../../../validation/AccountValidation";
 
 const SignUpForm: React.FC = () => {
   return (
@@ -13,23 +14,26 @@ const SignUpForm: React.FC = () => {
         email: "",
         password: "",
       }}
+      validationSchema={SignUpValidationSchema}
       onSubmit={(values) => console.log("form values: ", values)}
     >
       {(formik) => (
-        <form onSubmit={formik.handleSubmit}>
+        <form className="w-full" onSubmit={formik.handleSubmit}>
           <Input
             type="text"
             name="first_name"
-            placeholder="First Name"
+            placeholder="First name"
             onChange={formik.handleChange}
             value={formik.values.first_name}
+            errorMessage={formik.errors.first_name}
           />
           <Input
             type="text"
             name="last_name"
-            placeholder="Last Name"
+            placeholder="Last name"
             onChange={formik.handleChange}
             value={formik.values.last_name}
+            errorMessage={formik.errors.last_name}
           />
           <Input
             type="text"
@@ -37,6 +41,7 @@ const SignUpForm: React.FC = () => {
             placeholder="Username"
             onChange={formik.handleChange}
             value={formik.values.username}
+            errorMessage={formik.errors.username}
           />
           <Input
             type="email"
@@ -44,6 +49,7 @@ const SignUpForm: React.FC = () => {
             placeholder="Email"
             onChange={formik.handleChange}
             value={formik.values.email}
+            errorMessage={formik.errors.email}
           />
           <Input
             type="password"
@@ -51,8 +57,9 @@ const SignUpForm: React.FC = () => {
             placeholder="Password"
             onChange={formik.handleChange}
             value={formik.values.password}
+            errorMessage={formik.errors.password}
           />
-          <Button>Submit</Button>
+          <Button disabled={!formik.isValid || !formik.dirty}>Submit</Button>
         </form>
       )}
     </Formik>

@@ -7,7 +7,7 @@ type Props = React.DetailedHTMLProps<
 
 const Button: React.FC<Props> = ({ children, ...props }) => (
   <button
-    className="bg-red-600 hover:bg-red-700 text-white rounded w-full py-2  mb-4"
+    className="bg-red-600 disabled:bg-gray-200 hover:bg-red-700 text-white disabled:text-gray-500 rounded w-full py-2 mb-4 disabled:cursor-not-allowed"
     {...props}
   >
     {children}
