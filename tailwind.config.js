@@ -1,9 +1,9 @@
 module.exports = {
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./containers/**/*.{ts,tsx}",
-    "./layouts/**/*.{ts,tsx}",
+    "./src/pages/**/*.{ts,tsx}",
+    "./src/components/**/*.{ts,tsx}",
+    "./src/containers/**/*.{ts,tsx}",
+    "./src/layouts/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {},
