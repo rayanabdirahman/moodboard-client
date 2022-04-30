@@ -1,8 +1,8 @@
 import React from "react";
 import { Formik } from "formik";
-import Input from "../../../components/Input";
-import Button from "../../../components/Button";
-import { SignUpValidationSchema } from "../../../validation/AccountValidation";
+import { SignUpValidationSchema } from "../../../../validation/AccountValidation";
+import Button from "../../../atoms/Button";
+import Input from "../../../atoms/Input";
 
 const SignUpForm: React.FC = () => {
   return (

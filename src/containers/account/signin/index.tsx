@@ -1,6 +1,6 @@
 import React from "react";
-import { AccountLayout } from "../../layouts";
-import SignInForm from "./components/SignInForm";
+import AccountLayout from "../../../components/layouts/AccountLayout";
+import SignInForm from "../../../components/features/signin/Form";
 
 const SignInContainer: React.FC = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { Formik } from "formik";
-import Input from "../../../components/Input";
-import Button from "../../../components/Button";
-import { SignInValidationSchema } from "../../../validation/AccountValidation";
+import { SignInValidationSchema } from "../../../../validation/AccountValidation";
+import Button from "../../../atoms/Button";
+import Input from "../../../atoms/Input";
 
 const SignInForm: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const SignInForm: React.FC = () => {
             value={formik.values.password}
             errorMessage={formik.errors.password}
           />
-          <Button disabled={!formik.isValid || !formik.dirty}>Submit</Button>
+          <Button disabled={!formik.isValid || !formik.dirty}>Sign in</Button>
         </form>
       )}
     </Formik>

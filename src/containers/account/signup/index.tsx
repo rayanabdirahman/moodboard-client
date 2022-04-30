@@ -1,9 +1,6 @@
 import React from "react";
-import { Formik } from "formik";
-import Input from "../../components/Input";
-import { AccountLayout } from "../../layouts";
-import Button from "../../components/Button";
-import SignUpForm from "./components/SignUpForm";
+import AccountLayout from "../../../components/layouts/AccountLayout";
+import SignUpForm from "../../../components/features/signup/Form";
 
 const SignUpContainer: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "../../components/Head";
+import Head from "../../atoms/Head";
 
 type Props = {
   isPageLoading?: boolean;
