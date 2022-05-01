@@ -12,6 +12,7 @@ export type Props = React.DetailedHTMLProps<
 const Button: React.FC<Props> = ({
   children,
   variant = "primary",
+  type = "button",
   ...props
 }) => {
   const classname = clsx(styles.base, [
@@ -21,7 +22,7 @@ const Button: React.FC<Props> = ({
   ]);
 
   return (
-    <button {...props} className={classname}>
+    <button type={type} {...props} className={classname}>
       {children}
     </button>
   );
