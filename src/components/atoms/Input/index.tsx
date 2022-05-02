@@ -2,12 +2,17 @@ import React from "react";
 import clsx from "clsx";
 import * as styles from "./styles";
 
-type Props = React.HTMLProps<HTMLInputElement> & {
+type Props = React.DetailedHTMLProps<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+> & {
   errorMessage?: string;
 };
 
 const Input: React.FC<Props> = ({ errorMessage, ...props }) => {
-  const classname = clsx(styles.base, [errorMessage && [styles.error]]);
+  const classname = clsx(styles.base, props.className, [
+    errorMessage && [styles.error],
+  ]);
 
   return (
     <div className={styles.container}>

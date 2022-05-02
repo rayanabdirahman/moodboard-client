@@ -12,7 +12,7 @@ const SignInForm: React.FC = () => {
       onSubmit={(values) => console.log("form values: ", values)}
     >
       {(formik) => (
-        <form className="w-full" onSubmit={formik.handleSubmit}>
+        <form className="grid gap-4 w-full" onSubmit={formik.handleSubmit}>
           <Input
             type="email"
             name="email"

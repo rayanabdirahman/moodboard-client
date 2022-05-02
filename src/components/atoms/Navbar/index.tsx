@@ -34,7 +34,7 @@ const Navbar: React.FC<Props> = ({ isVisible = true }) => {
         <div className={styles.cta_container}>
           <Link href={Route.SIGN_IN}>Sign in</Link>
           <Link type="button" href={Route.SIGN_UP}>
-            Sign up
+            Get started
           </Link>
         </div>
       </div>

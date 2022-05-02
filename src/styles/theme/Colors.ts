@@ -22,6 +22,7 @@ const bg = {
 };
 
 const border = {
+  xlightgray: `border-gray-100`,
   error: `border-red-500`,
 };
 

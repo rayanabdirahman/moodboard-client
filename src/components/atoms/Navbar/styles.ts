@@ -1,6 +1,6 @@
 import theme from "../../../styles/theme";
 
-export const outer_container = `${theme.color.bg.lightgray}`;
+export const outer_container = `${theme.color.bg.white} border-b ${theme.color.border.xlightgray}`;
 
 export const container = `${theme.layout.container} flex items-center py-4 ${theme.color.text.primary} font-medium`;
 

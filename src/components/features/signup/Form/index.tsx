@@ -18,7 +18,7 @@ const SignUpForm: React.FC = () => {
       onSubmit={(values) => console.log("form values: ", values)}
     >
       {(formik) => (
-        <form className="w-full" onSubmit={formik.handleSubmit}>
+        <form className="grid gap-4 w-full" onSubmit={formik.handleSubmit}>
           <Input
             type="text"
             name="first_name"

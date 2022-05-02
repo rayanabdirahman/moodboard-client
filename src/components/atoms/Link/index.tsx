@@ -11,9 +11,10 @@ type Props = React.DetailedHTMLProps<
   type?: "link" | "button";
 };
 
-const Link: React.FC<Props> = ({ children, type = "link", href }) => {
+const Link: React.FC<Props> = ({ children, type = "link", href, ...props }) => {
   const classname = clsx(
-    type === "button" ? [btnstyles.base, btnstyles.primary] : styles.link
+    type === "button" ? [btnstyles.base, btnstyles.primary] : styles.link,
+    props.className
   );
 
   return (
