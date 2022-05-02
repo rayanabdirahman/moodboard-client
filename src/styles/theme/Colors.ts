@@ -26,6 +26,7 @@ const border = {
 };
 
 const text = {
+  brand: `text-red-600`,
   white: `text-white`,
   primary: `text-neutral-900`,
   secondary: `text-gray-500`,

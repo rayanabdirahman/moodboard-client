@@ -59,7 +59,11 @@ const SignUpForm: React.FC = () => {
             value={formik.values.password}
             errorMessage={formik.errors.password}
           />
-          <Button type="submit" disabled={!formik.isValid || !formik.dirty}>
+          <Button
+            width="full"
+            htmlType="submit"
+            disabled={!formik.isValid || !formik.dirty}
+          >
             Submit
           </Button>
         </form>

@@ -2,27 +2,31 @@ import React from "react";
 import clsx from "clsx";
 import * as styles from "./styles";
 
-export type Props = React.DetailedHTMLProps<
+type Props = React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > & {
   variant?: "primary" | "secondary";
+  width?: "full" | "auto";
+  htmlType?: "submit" | "reset" | "button";
 };
 
 const Button: React.FC<Props> = ({
   children,
   variant = "primary",
-  type = "button",
+  htmlType = "button",
+  width = "auto",
   ...props
 }) => {
   const classname = clsx(styles.base, [
     props.disabled
       ? styles.disabled
       : [variant === "primary" && [styles.primary]],
+    { "w-full": width === "full" },
   ]);
 
   return (
-    <button type={type} {...props} className={classname}>
+    <button type={htmlType} {...props} className={classname}>
       {children}
     </button>
   );
