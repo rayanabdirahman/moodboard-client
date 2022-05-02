@@ -1,34 +1,3 @@
-// const palette = {
-//   brand: "red-600",
-//   darkbrand: "red-700",
-//   black: "neutral-900",
-//   white: "white",
-//   gray: "gray-500",
-//   lightgray: "gray-200",
-// };
-
-// const bg = {
-//   // brand: "bg-red-600",
-//   brand: `bg-${palette.brand}`,
-//   darkbrand: "bg-red-700",
-//   black: "bg-neutral-900",
-//   white: "bg-white",
-//   gray: "bg-gray-200",
-//   lightgray: "bg-gray-100",
-//   error: "bg-red-500",
-//   disabled: "disabled:bg-gray-200",
-// };
-
-// const border = {
-//   error: "border-red-500",
-// };
-
-// const Colors = {
-//   palette,
-//   bg,
-//   border,
-// };
-
 const palette = {
   brand: "red-600",
   darkbrand: "red-700",
@@ -41,24 +10,34 @@ const palette = {
 };
 
 const bg = {
-  brand: `bg-${palette.brand}`,
-  darkbrand: `bg-${palette.darkbrand}`,
-  black: `bg-${palette.black}`,
-  white: `bg-${palette.white}`,
-  gray: `bg-${palette.lightgray}`,
-  lightgray: `bg-${palette.xlightgray}`,
-  error: `bg-${palette.error}`,
-  disabled: `disabled:bg-${palette.lightgray}`,
+  brand: `bg-red-600`,
+  darkbrand: `bg-red-700`,
+  black: `bg-neutral-900`,
+  white: `bg-white`,
+  lightgray: `bg-gray-200`,
+  xlightgray: `bg-gray-100`,
+  error: `bg-red-500`,
+  disabled: `disabled:bg-gray-200`,
+  hover_on_brand: `hover:bg-red-700`,
 };
 
 const border = {
-  error: `border-${palette.error}`,
+  error: `border-red-500`,
+};
+
+const text = {
+  white: `text-white`,
+  primary: `text-neutral-900`,
+  secondary: `text-gray-500`,
+  error: `text-red-500`,
+  disabled: `disabled:text-gray-500`,
 };
 
 const Colors = {
   palette,
   bg,
   border,
+  text,
 };
 
 export default Colors;
