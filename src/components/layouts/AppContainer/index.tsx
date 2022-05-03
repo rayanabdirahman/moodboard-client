@@ -9,7 +9,6 @@ type Props = {
 const AppContainer: React.FC<Props> = ({ children }) => (
   <>
     <Head>
-      <title>Moodboard | Shop your local stores</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
