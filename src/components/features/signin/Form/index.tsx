@@ -1,15 +1,15 @@
-import React from "react";
-import { Formik } from "formik";
-import { SignInValidationSchema } from "../../../../validation/AccountValidation";
-import Button from "../../../atoms/Button";
-import Input from "../../../atoms/Input";
+import React from 'react';
+import { Formik } from 'formik';
+import { SignInValidationSchema } from '../../../../validation/AccountValidation';
+import Button from '../../../atoms/Button';
+import Input from '../../../atoms/Input';
 
 const SignInForm: React.FC = () => {
   return (
     <Formik
-      initialValues={{ email: "", password: "" }}
+      initialValues={{ email: '', password: '' }}
       validationSchema={SignInValidationSchema}
-      onSubmit={(values) => console.log("form values: ", values)}
+      onSubmit={(values) => console.log('form values: ', values)}
     >
       {(formik) => (
         <form className="grid gap-4 w-full" onSubmit={formik.handleSubmit}>

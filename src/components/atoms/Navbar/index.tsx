@@ -1,9 +1,9 @@
-import React from "react";
-import clsx from "clsx";
-import * as styles from "./styles";
-import { default as NextLink } from "next/link";
-import { Route } from "../../../domain/enums/navigation";
-import Link from "../Link";
+import React from 'react';
+import clsx from 'clsx';
+import * as styles from './styles';
+import { default as NextLink } from 'next/link';
+import { Route } from '../../../domain/enums/navigation';
+import Link from '../Link';
 
 type Props = {
   isVisible?: boolean;

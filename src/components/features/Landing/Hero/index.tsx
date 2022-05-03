@@ -1,10 +1,10 @@
-import React from "react";
-import Image from "next/image";
-import clsx from "clsx";
-import * as styles from "./styles";
-import Link from "../../../atoms/Link";
-import { Route } from "../../../../domain/enums/navigation";
-import Input from "../../../atoms/Input";
+import React from 'react';
+import Image from 'next/image';
+import clsx from 'clsx';
+import * as styles from './styles';
+import Link from '../../../atoms/Link';
+import { Route } from '../../../../domain/enums/navigation';
+import Input from '../../../atoms/Input';
 
 type Props = {
   errorMessage?: string;

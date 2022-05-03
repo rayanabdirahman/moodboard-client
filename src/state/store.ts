@@ -1,8 +1,8 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { applyMiddleware } from "redux";
-import rootReducer from "./reducers";
-import middlewares from "./middlewares";
-import { UIState } from "./domain/types";
+import { configureStore } from '@reduxjs/toolkit';
+import { applyMiddleware } from 'redux';
+import rootReducer from './reducers';
+import middlewares from './middlewares';
+import { UIState } from './domain/types';
 
 export type State = {
   ui: UIState;
@@ -14,7 +14,7 @@ export type State = {
 // );
 
 const store = configureStore({
-  reducer: rootReducer,
+  reducer: rootReducer
 });
 
 export default store;

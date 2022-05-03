@@ -1,4 +1,4 @@
-import theme from "../../../../styles/theme";
+import theme from '../../../../styles/theme';
 
 export const outer_container = `${theme.color.bg.white} relative`;
 
@@ -7,7 +7,7 @@ export const container = `${theme.layout.container} flex flex-col-reverse lg:fle
 export const content = `flex flex-1 flex-col items-center lg:items-start gap-5 justify-center`;
 
 export const header =
-  "text-3xl font-medium md:text-4 lg:text-6xl text-center lg:text-left";
+  'text-3xl font-medium md:text-4 lg:text-6xl text-center lg:text-left';
 
 export const support = `${theme.color.text.secondary} text-xl font-normal mb-5`;
 

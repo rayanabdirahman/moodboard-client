@@ -1,4 +1,4 @@
-import theme from "../../../styles/theme";
+import theme from '../../../styles/theme';
 
 export const base = `${theme.color.text.white} rounded py-2 px-4 font-medium text-sm`;
 

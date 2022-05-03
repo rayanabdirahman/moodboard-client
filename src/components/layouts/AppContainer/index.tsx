@@ -1,6 +1,6 @@
-import React from "react";
-import Navbar from "../../atoms/Navbar";
-import Head from "next/head";
+import React from 'react';
+import Navbar from '../../atoms/Navbar';
+import Head from 'next/head';
 
 type Props = {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
-import React from "react";
-import Head from "../../atoms/Head";
-import * as styles from "./styles";
+import React from 'react';
+import Head from '../../atoms/Head';
+import * as styles from './styles';
 
 type Props = {
   isPageLoading?: boolean;

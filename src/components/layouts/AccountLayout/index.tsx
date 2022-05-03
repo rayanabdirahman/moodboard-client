@@ -1,6 +1,6 @@
-import React from "react";
-import PageContainer from "../PageContainer";
-import ContentArea from "./components/ContentArea";
+import React from 'react';
+import PageContainer from '../PageContainer';
+import ContentArea from './components/ContentArea';
 
 type Props = {
   isPageLoading?: boolean;

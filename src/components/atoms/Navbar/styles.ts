@@ -1,4 +1,4 @@
-import theme from "../../../styles/theme";
+import theme from '../../../styles/theme';
 
 export const outer_container = `${theme.color.bg.white} border-b ${theme.color.border.xlightgray}`;
 

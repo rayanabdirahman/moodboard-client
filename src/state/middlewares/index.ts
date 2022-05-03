@@ -1,5 +1,5 @@
-import thunk from "redux-thunk";
-import logger from "redux-logger";
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 
 const middlewares = [thunk, logger];
 
