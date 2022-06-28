@@ -1,5 +1,6 @@
-import { Button, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Flex, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
+import Button from "../../atoms/Button";
 
 const Navbar: React.FC = () => (
   <Flex
@@ -15,9 +16,7 @@ const Navbar: React.FC = () => (
     </Flex>
     <Flex align="center">
       {/* <Text mr="4">Features</Text> */}
-      <Button size="sm" bg="brand.500" color="white">
-        Get early access
-      </Button>
+      <Button size="sm">Get early access</Button>
     </Flex>
   </Flex>
 );
