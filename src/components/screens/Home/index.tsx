@@ -24,7 +24,7 @@ const HomeScreen: React.FC<Props> = () => {
         spacing="4"
         pt="56px"
       >
-        <Heading textSize="h4" color={theme.color.brand}>
+        <Heading textSize="h4" color={theme.color.brand} textWeight="normal">
           Social shopping marketplace
         </Heading>
         <Display as="h1" styleType="light">

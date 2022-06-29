@@ -4,7 +4,7 @@ import { Heading as CUHeading, HeadingProps } from "@chakra-ui/react";
 type Props = HeadingProps & {
   styleType?: "dark" | "light";
   textSize?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  textWeight?: "semibold" | "bold" | "extrabold";
+  textWeight?: "normal" | "semibold" | "bold" | "extrabold";
 };
 
 const Heading: React.FC<Props> = ({
@@ -41,7 +41,9 @@ const Heading: React.FC<Props> = ({
       : "23px";
 
   const weight =
-    textWeight === "extrabold"
+    textWeight === "normal"
+      ? "normal"
+      : textWeight === "extrabold"
       ? "extrabold"
       : textWeight === "bold"
       ? "bold"
