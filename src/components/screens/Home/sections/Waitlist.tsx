@@ -7,7 +7,7 @@ import theme from "../../../../constants/theme";
 import EarlyAccessInput from "../../../UI/organisms/EarlyAccessInput";
 
 const Waitlist: React.FC = () => (
-  <Box w="full" py={4} bg={theme.color.shades.white}>
+  <Box w="full" py={20} bg={theme.color.shades.white}>
     <Container maxW="container.xl" bg={theme.color.brand} py={20} rounded="xl">
       <VStack textAlign="center">
         <VStack maxW="4xl">
