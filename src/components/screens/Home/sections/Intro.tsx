@@ -7,8 +7,8 @@ import theme from "../../../../constants/theme";
 import EarlyAccessInput from "../../../UI/organisms/EarlyAccessInput";
 
 const Inro: React.FC = () => (
-  <Box w="full" bg="black" pt={20} pb={48}>
-    <Container maxW="container.xl">
+  <Box w="full" bg={theme.color.shades.black} pt={20} pb={48}>
+    <Container maxW="container.xl" py={20}>
       <VStack textAlign="center">
         <VStack w="5xl">
           <Heading textSize="h4" color={theme.color.brand} textWeight="normal">
