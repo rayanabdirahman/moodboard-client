@@ -13,6 +13,7 @@ import Heading from "../../UI/atoms/Typography/Heading";
 import Text from "../../UI/atoms/Typography/Text";
 import Intro from "./sections/Intro";
 import SellingPoints from "./sections/SellingPoints";
+import Waitlist from "./sections/Waitlist";
 
 type Props = {};
 
@@ -21,6 +22,7 @@ const HomeScreen: React.FC<Props> = () => {
     <Flex direction="column" alignItems="center">
       <Intro />
       <SellingPoints />
+      <Waitlist />
     </Flex>
   );
 };
