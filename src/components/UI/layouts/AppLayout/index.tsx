@@ -8,7 +8,7 @@ const AppLayout: React.FC<Props> = ({ children }) => (
   <>
     <Navbar />
     <main>{children}</main>
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 
