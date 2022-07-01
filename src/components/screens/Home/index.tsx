@@ -24,8 +24,8 @@ const HomeScreen: React.FC<Props> = () => {
     <Flex direction="column" alignItems="center">
       <Intro />
       <SellingPoints />
-      <ShopFeatures />
-      <SocialFeatures />
+      {/* <ShopFeatures />
+      <SocialFeatures /> */}
       <Waitlist />
     </Flex>
   );

@@ -18,7 +18,7 @@ const Button: React.FC<Props> = ({ styleType = "primary", ...props }) => {
       ? "black"
       : styleType === "tertiary"
       ? "gray.50"
-      : "brand.400";
+      : "red.600";
 
   return (
     <CUButton

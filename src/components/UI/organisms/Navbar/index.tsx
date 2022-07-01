@@ -9,10 +9,10 @@ const Navbar: React.FC = () => (
     <Container maxW="container.xl">
       <HStack justifyContent="space-between">
         <Image src="/logo-light.svg" height="48px" alt="logo"></Image>
-        <HStack>
-          {/* <Text color={theme.color.shades.white} mr="4">
-            Features
-          </Text> */}
+        <HStack spacing={6}>
+          {/* <Text color={theme.color.shades.white}>Features</Text> */}
+          {/* <Text color={theme.color.shades.white}>Shopping</Text>
+          <Text color={theme.color.shades.white}>Social</Text> */}
           <Button size="sm">Get early access</Button>
         </HStack>
       </HStack>
