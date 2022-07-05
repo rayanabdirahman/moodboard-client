@@ -29,6 +29,7 @@ const Button: React.FC<Props> = ({ styleType = "primary", ...props }) => {
       borderColor={styleType === "tertiary" ? "black.800" : "inherit"}
       _hover={{ bg: statebg }}
       _active={{ bg: statebg }}
+      borderRadius={4}
     />
   );
 };
